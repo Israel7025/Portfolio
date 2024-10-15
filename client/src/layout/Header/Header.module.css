@@ -1,0 +1,118 @@
+
+
+.threeD {
+  color: lightgreen;
+  white-space: nowrap;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5em;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
+
+.threeD:hover {
+  transition: 0.3s;
+  transform: scale(1.1)translate(-50%, -50%);
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}
+
+.hero__subtitle {
+  letter-spacing: 14px;
+}
+
+.typingDemo {
+  width: 100%;
+  animation: typing 5s steps(22), blink .4s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px lightgreen;  
+  transform: scaleX(0); 
+  transition: transform 250ms ease-in-out;
+}
+a:hover:after { transform: scaleX(1); }
+
+.socialLinks,.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialBtn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px grey;
+  background: lightgreen;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.socialBtn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.socialBtn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.socialBtn:hover {
+  width: 150px;
+  border-radius: 5px;
+  
+}
+
+.socialBtn:hover span {
+  padding: 2px;
+  width: 80px;
+  
+}
+
+#twitter svg {
+  fill: #1da1f2;
+}
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #333;
+}
+
