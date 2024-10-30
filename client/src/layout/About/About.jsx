@@ -1,18 +1,19 @@
 import React from 'react'
 
+import programmer from '../../assets/img/programmer.jpg'
+
 const About = () => {
   return (
-    <div className="sm:flex  max-w-screen-full">
-  <div className="sm:w-1/2 p-10">
+    <>
+    <div className='flex justify-center'>
+    <div className="sm:flex w-[80%] gap-40 ">
+  <div className="sm:w-1/2 p-10 ">
     <div className="image object-center text-center">
-      <img src="https://i.imgur.com/WbQnbas.png" />
+      <img src={programmer} />
     </div>
   </div>
   <div className="sm:w-1/2 p-5 flex">
     <div className="text">
-      <span className="text-gray-500 border-b-2 border-indigo-600 uppercase">
-        About us
-      </span>
       <h2 className="my-4 font-bold text-2xl  sm:text-4xl ">
         Acerca de <span className="text-indigo-600">Israel Pinto</span>
       </h2>
@@ -22,7 +23,10 @@ const About = () => {
     </div>
   </div>
 </div>
+</div>
 
+
+</>
   )
 }
 

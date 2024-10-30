@@ -9,11 +9,14 @@ import Example from "./layout/Example.jsx";
 import Contact from "./layout/Contact/Contact.jsx";
 import Footer from "./layout/Footer/Footer.jsx";
 
+
 createRoot(document.getElementById("root")).render(
     <StrictMode>
+        <Header />
+        <About />
+
         <Wrapper>
-            <Header />
-            <About />
+            
             <Proyects />
         </Wrapper>
         <Example />

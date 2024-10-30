@@ -17,14 +17,14 @@ const Example = () => {
 
     return (
         <>
-            <div className="flex gap-36 flex-wrap justify-center bg-gradient-to-br from-indigo-500 to-violet-500 px-4 py-12 text-slate-900">
+            <div className="flex gap-36 flex-wrap justify-center bg-gradient-to-br from-green-300 to-blue-600 px-4 py-12 text-slate-900 mb-16">
                 <TiltCard title="PROYECTO 1" image={placeholderimg} description="Descripción del proyecto 1" />
                 <TiltCard title="PROYECTO 2" image={placeholderimg} description="Descripción del proyecto 2" />
 
                 <TiltCard title="PROYECTO 3" image={placeholderimg} description="Descripción del proyecto 2" />
             </div>
             <div className="flex justify-center items-center">
-                <h1 className="text-5xl font-bold tracking-[12px]">#</h1>
+                <h1 className="text-5xl font-bold tracking-[12px]"></h1>
             </div>
         </>
     );
@@ -65,7 +65,7 @@ const TiltCard = ({ title, image, description }) => {
 
     return (
         <>
-            <div className="flex gap-36">
+            <div className="flex gap-36 h-screen items-center">
                 <motion.div
                     ref={ref}
                     onMouseMove={handleMouseMove}
@@ -74,7 +74,7 @@ const TiltCard = ({ title, image, description }) => {
                         transformStyle: "preserve-3d",
                         transform,
                     }}
-                    className="relative h-[32rem] w-[24rem] rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300 shadow-2xl"
+                    className="relative h-[32rem] w-[24rem] rounded-xl bg-gradient-to-br from-green-300 to-violet-300 shadow-2xl"
                 >
                     <div
                         style={{
